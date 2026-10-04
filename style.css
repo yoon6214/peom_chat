@@ -1,0 +1,190 @@
+/* 전체 화면 */
+.stApp {
+    background-color: #ffffff;
+}
+
+.main .block-container {
+    max-width: 1050px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+/* 제목 */
+.title-area {
+    margin-bottom: 2.2rem;
+}
+
+.title-area h1 {
+    margin: 0;
+    color: #302d45;
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.06em;
+}
+
+.title-area h1 span {
+    font-size: 2.1rem;
+}
+
+.title-area p {
+    margin-top: 0.65rem;
+    margin-bottom: 0;
+    color: #858197;
+    font-size: 1rem;
+}
+
+/* 입력 안내 */
+.section-title {
+    margin-bottom: 0.7rem;
+    color: #4a465d;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.section-title span {
+    margin-right: 0.25rem;
+}
+
+/* 입력창 */
+div[data-testid="stTextInput"] {
+    margin-bottom: 0;
+}
+
+div[data-testid="stTextInput"] label {
+    display: none;
+}
+
+div[data-testid="stTextInput"] input {
+    height: 52px;
+    padding: 0 16px;
+    border: 1.5px solid #ddd8f3;
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: #3e3a50;
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+div[data-testid="stTextInput"] input::placeholder {
+    color: #aaa6b8;
+}
+
+div[data-testid="stTextInput"] input:focus {
+    border-color: #9b8cda;
+    box-shadow: 0 0 0 3px rgba(155, 140, 218, 0.12);
+}
+
+/* 버튼 */
+div.stButton {
+    height: 40px;
+}
+
+div.stButton > button {
+    height: 40px;
+    border: 1px solid #8879c8;
+    border-radius: 12px;
+    background-color: #8879c8;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+div.stButton > button:hover {
+    background-color: #7868bd;
+    border-color: #7868bd;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+div.stButton > button:active {
+    transform: translateY(0);
+}
+
+/* 결과 카드 */
+.result-card {
+    margin-top: 2.5rem;
+    padding: 28px 32px;
+    border: 1px solid #e5e1f0;
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 18px rgba(70, 61, 100, 0.06);
+}
+
+.result-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #eeeaf5;
+}
+
+.result-title {
+    color: #4b4274;
+    font-size: 1.25rem;
+    font-weight: 750;
+    letter-spacing: -0.03em;
+}
+
+.result-label {
+    color: #a19bac;
+    font-size: 0.82rem;
+}
+
+.poem-content {
+    padding: 25px 8px 20px;
+    color: #4b4857;
+    font-size: 1rem;
+    line-height: 2;
+    letter-spacing: -0.02em;
+}
+
+.poem-content p {
+    margin: 0 0 9px;
+}
+
+.poem-content p:last-child {
+    margin-bottom: 0;
+}
+
+.result-footer {
+    padding-top: 15px;
+    border-top: 1px solid #f0edf5;
+    color: #aaa5b2;
+    font-size: 0.82rem;
+}
+
+/* 경고 */
+div[data-testid="stAlert"] {
+    border-radius: 10px;
+}
+
+/* 모바일 */
+@media (max-width: 700px) {
+    .main .block-container {
+        padding: 2rem 1.1rem 3rem;
+    }
+
+    .title-area h1 {
+        font-size: 2.15rem;
+    }
+
+    .title-area h1 span {
+        font-size: 1.8rem;
+    }
+
+    .result-card {
+        padding: 23px 20px;
+    }
+
+    .result-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .poem-content {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+}
